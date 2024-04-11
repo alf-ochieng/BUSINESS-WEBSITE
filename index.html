@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matandarua's Products</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Matandarua's Products</h1>
+    </header>
+    
+    <section id="products">
+        <h2>Products Available in Store</h2>
+        <div class="product">
+            <img src="pictures/image1.jpg" alt="Product 1">
+            <h3>Product 1: Makeup</h3>
+            <p>Description: A collection of high-quality makeup products suitable for various occasions and skin types. Includes foundation, lipstick, eyeshadow palettes, and more.</p>
+            <p>Price: $29.99</p>
+            <button onclick="showInquiryForm('Product 1')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image2.jpg" alt="Product 2">
+            <h3>Product 2: Camera</h3>
+            <p>Description: A professional-grade digital camera equipped with advanced features for capturing stunning photos and videos. Ideal for photography enthusiasts and professionals.</p>
+            <p>Price: $899.99</p>
+            <button onclick="showInquiryForm('Product 2')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image3.jpg" alt="Product 3">
+            <h3>Product 3: Lighters</h3>
+            <p>Description: Stylish and reliable lighters, perfect for lighting candles, cigarettes, or any other items requiring a flame. Available in various designs and colors.</p>
+            <p>Price: $4.99</p>
+            <button onclick="showInquiryForm('Product 3')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image4.jpg" alt="Product 4">
+            <h3>Product 4: Camera Spare Parts</h3>
+            <p>Description: Essential spare parts and accessories for cameras, including lenses, batteries, memory cards, and camera straps. Ensures smooth functioning and maintenance of your camera equipment.</p>
+            <p>Price: $39.99 - $199.99 (varies by part)</p>
+            <button onclick="showInquiryForm('Product 4')">Inquire</button>
+        </div>
+        <!-- Continue adding products up to the tenth one -->
+        <div class="product">
+            <img src="pictures/image5.jpg" alt="Product 5">
+            <h3>Product 5: Chocolate</h3>
+            <p>Description: Indulgent and delicious chocolates crafted from the finest cocoa beans. A perfect treat for chocolate lovers, available in a variety of flavors and packaging options.</p>
+            <p>Price: $12.99</p>
+            <button onclick="showInquiryForm('Product 5')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image6.jpg" alt="Product 6">
+            <h3>Product 6: Camera Lenses</h3>
+            <p>Description: High-quality camera lenses designed to enhance your photography experience. Offers a range of focal lengths and features to achieve the perfect shot in any situation.</p>
+            <p>Price: $199.99 - $999.99 (varies by lens)</p>
+            <button onclick="showInquiryForm('Product 6')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image7.jpg" alt="Product 7">
+            <h3>Product 7: Glass of Milk</h3>
+            <p>Description: A glass containing fresh, pure milk sourced from local farms. Provides essential nutrients and a refreshing taste, perfect for breakfast or as a healthy snack.</p>
+            <p>Price: $1.99</p>
+            <button onclick="showInquiryForm('Product 7')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image8.jpg" alt="Product 8">
+            <h3>Product 8: Orange Medicine</h3>
+            <p>Description: Natural orange-flavored medicine enriched with vitamins and minerals to boost the immune system and promote overall health. Suitable for adults and children alike.</p>
+            <p>Price: $9.99</p>
+            <button onclick="showInquiryForm('Product 8')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image9.jpg" alt="Product 9">
+            <h3>Product 9: Curtains</h3>
+            <p>Description: Stylish and functional curtains designed to enhance the decor of any room while providing privacy and light control. Available in various colors, patterns, and materials.</p>
+            <p>Price: $39.99 - $99.99 (varies by size)</p>
+            <button onclick="showInquiryForm('Product 9')">Inquire</button>
+        </div>
+        <div class="product">
+            <img src="pictures/image10.jpg" alt="Product 10">
+            <h3>Product 10: Smartphone and Tablets</h3>
+            <p>Description: Cutting-edge smartphones and tablets with advanced features and sleek designs. Offers seamless connectivity, powerful performance, and versatile functionality for both work and entertainment.</p>
+            <p>Price: $499.99 - $1299.99 (varies by model)</p>
+            <button onclick="showInquiryForm('Product 10')">Inquire</button>
+        </div>
+    </section>
+    
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeInquiryForm()">&times;</span>
+            <h2>Inquiry Form</h2>
+            <form id="inquiryForm" onsubmit="submitInquiry()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <input type="hidden" id="product" value="">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
